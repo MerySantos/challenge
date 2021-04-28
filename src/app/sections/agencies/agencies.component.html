@@ -1,0 +1,17 @@
+<!-- <p>{{getTexto(4)}}</p> -->
+<mat-list class="">
+  <div mat-subheader>Agencies</div>
+  <mat-list-item *ngFor="let agency of agencies; let i=index">
+    <img mat-list-icon src="https://cdn2.iconfinder.com/data/icons/gaming-and-beyond-part-2-1/80/User_gray-512.png" alt="" />
+    <div mat-line class="">
+      <a routerLink= {{getPath(i)}}>
+        Agencia {{agency.agencia}}
+      </a>
+    </div>
+    <div mat-line>{{agency.departamento}}</div>
+    <div mat-line> {{agency.direccion}} </div>
+    <mat-divider></mat-divider>
+  </mat-list-item>
+</mat-list>
+<button mat-fab color="accent" class="addAgency">+</button>
+

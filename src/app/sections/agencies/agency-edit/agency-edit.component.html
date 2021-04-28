@@ -1,0 +1,40 @@
+<div class="row mx-0" style="padding: 20px;" [formGroup]="form">
+  <p>
+      <mat-form-field floatLabel="never">
+      <input matInput placeholder="Ingresa esta información" maxlength="100" formControlName="agencia" />
+    </mat-form-field>
+  </p>  
+  <p>
+    <mat-form-field floatLabel="never">
+      <input matInput placeholder="Ingresa esta información" maxlength="100" formControlName="direccion" />
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field floatLabel="never">
+      <input matInput placeholder="Ingresa esta información" maxlength="100" formControlName="distrito" />
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field floatLabel="never">
+      <input matInput placeholder="Ingresa esta información" maxlength="100" formControlName="lat" />
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field floatLabel="never">
+      <input matInput placeholder="Ingresa esta información" maxlength="100" formControlName="lon" />
+    </mat-form-field>
+  </p>
+
+    <button
+      type="button"
+      mat-flat-button
+      color="primary"
+      class="mb-2 mt-4"
+      (click)="save()"
+    >
+      Guardar Cambios
+    </button>
+
+  </div>
+  <div #map style="width:100%;height:400px"></div>
+
